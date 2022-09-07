@@ -494,7 +494,7 @@ public class JsonRuleCompiler {
                         break;
                     case VALUE_NUMBER_FLOAT:
                     case VALUE_NUMBER_INT:
-                        values.add(ComparableNumber.generate(parser.getDoubleValue()));
+                        values.add(parser.getText());
                         hasNumber = true;
                         break;
                     default:
@@ -522,7 +522,7 @@ public class JsonRuleCompiler {
                 break;
             case VALUE_NUMBER_FLOAT:
             case VALUE_NUMBER_INT:
-                values.add(ComparableNumber.generate(parser.getDoubleValue()));
+                values.add(parser.getText());
                 hasNumber = true;
                 break;
             default:

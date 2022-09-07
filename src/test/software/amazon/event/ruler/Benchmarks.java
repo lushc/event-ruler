@@ -363,7 +363,7 @@ public class Benchmarks {
                 "  },\n" +
                 "  \"geometry\": {\n" +
                 "    \"coordinates\": {\n" +
-                "      \"z\": [ {\"anything-but\": 1} ] \n" +
+                "      \"z\": [ {\"anything-but\": [ 1, 1.23456789, 5000000000 ]} ] \n" +
                 "    }\n" +
                 "  }\n" +
                 "}";

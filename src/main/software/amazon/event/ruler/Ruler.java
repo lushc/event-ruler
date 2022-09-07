@@ -117,7 +117,7 @@ public class Ruler {
                     return anythingButPattern.getValues().stream().noneMatch(v -> v.equals('"' + val.asText() + '"'));
                 } else if (val.isNumber()) {
                     return anythingButPattern.getValues().stream()
-                            .noneMatch(v -> v.equals(ComparableNumber.generate(val.asDouble())));
+                            .noneMatch(v -> v.equals(val.asText()));
                 }
                 return false;
 
